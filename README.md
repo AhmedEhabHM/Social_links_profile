@@ -1,6 +1,6 @@
-# # Social Links Profile 🎨🌐
+🌍 Project Title: **Social Links Profile** 🎨🌐
 
-This is my **second project**, a simple and elegant personal profile page displaying social media links.
+📚 Description: This is my **second project**, a simple and elegant personal profile page displaying social media links.
 
 ## 💡 Features:
 ✅ Clean and modern design  
