@@ -1,74 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  font-style: normal;
 }
 
+
+html,
 body {
-    background-color: #141414;
-    display: flex;
-    justify-content: center;
+  background-color: #141414;
+  height: 100%;
+}
+
+main,
+#div_1,
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 100%;
 }
 
 #div_1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: hsl(0, 0%, 12%);
-    width: 300px;
-    height: 460px;
-    border-radius: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: hsl(0, 0%, 12%);
+  width: 300px;
+  height: 460px;
+  border-radius: 20px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
 
 h1 {
-    color: white;
-    font-family: "Inter", serif;
-    font-weight: 700;
-    font-size: x-large;
-    font-style: normal;
+  color: white;
+  font-weight: 700;
+  font-size: x-large;
 }
 
 #location {
-    color: #cce563;
-    font-family: "Inter", serif;
-    font-weight: 600;
-    font-size: 14px;
-    font-style: normal;
+  color: #cce563;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 #about {
-    color: white;
-    font-family: "Inter", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 a {
-    font-family: "Inter", serif;
-    font-weight: 700;
-    font-size: 12px;
-    font-style: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    background-color: hsl(0, 0%, 20%);
-    height: 35px;
-    width: 80%;
-    border-radius: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(0, 0%, 20%);
+  height: 35px;
+  width: 80%;
+  border-radius: 10px;
+  margin: 5px 0;
 }
 
 a:hover {
-    background-color: #cce563;
+  background-color: #cce563;
+}
+a:active {
+    transform: scale(0.95);
+}
+@media (max-width: 600px) {
+    #div_1 {
+        width: 90%;
+        height: 70%;
+        padding: 20px;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: large;
+    }
 }
